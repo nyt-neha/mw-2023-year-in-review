@@ -45,3 +45,15 @@
     transform: rotate(360deg);
   }
 }
+
+$purple-color: #9747FF;
+
+.home {
+  background-color: $purple-color;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.home__year {
+  color: white;
+}

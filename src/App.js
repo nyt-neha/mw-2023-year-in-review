@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import YourNYT from './pages/YourNYT';
-import './App.css';
+import './App.scss';
 import {StrictMode } from "react"; 
 import logo from "./LogoWhite.png"
 
