@@ -28,6 +28,15 @@
   color: #61dafb;
 }
 
+@font-face {
+  font-family: cheltenham;
+  src: url('../public/fonts/cheltenham/cheltenham-italic-200.woff');
+}
+
+.test1 {
+  font-family: cheltenham;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
