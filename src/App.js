@@ -9,8 +9,10 @@ import UserProfile from "./UserProfile";
 function App() {
   return (
     <>
-    <img src={logo} alt="Logo" />
-
+    <div className="header">
+      <img src={logo} alt="Logo" />
+    </div>
+    
     <div className="App">
       <StrictMode> 
 

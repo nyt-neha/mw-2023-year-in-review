@@ -19,7 +19,8 @@ function YourNYT(props) {
                     <p className="stat__num">11</p>
                     <p className="stat__name">Favorite {<br/>} Contributors {String.fromCharCode(8594)}</p>
                 </div>
-        </div>
+                <div className="button">Share</div>
+            </div>
         <Outlet />
         </>
     );

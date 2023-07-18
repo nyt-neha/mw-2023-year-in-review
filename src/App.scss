@@ -23,18 +23,52 @@
   src: url('../public/fonts/cheltenham/cheltenham-normal-200.woff');
 }
 @font-face {
-  font-family: karnak-normal-700;
+  font-family: karnak-bold;
   src: url('../public/fonts/karnak/karnak-normal-700.woff');
+}
+@font-face {
+  font-family: franklin-normal-500;
+  src: url('../public/fonts/franklin/franklin-normal-500.woff');
 }
 
 $purple-color: #9747FF;
 
 .button {
+  font-family: karnak-bold;
   background-color: black;
   text-decoration: none;
   color: white;
-  padding: 5px 20px;
-  border-radius: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  max-width: 75px
+}
+
+h4 {
+  font-size: 12px;
+  font-family: franklin-normal-500;
+  margin: 5px 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  width: 100%;
+  position: fixed;
+}
+// USER PROFILE FOOTER----------------------------------------------------------
+.userprofile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2% 10% 5% 10%;
+  border-top: 1px solid black;
+  position: fixed;
+
+  &__description {
+    font-family: cheltenham-normal-200;
+    font-size: 21px;
+  }
 }
 
 // HOME----------------------------------------------------------
@@ -43,10 +77,10 @@ $purple-color: #9747FF;
   background-color: $purple-color;
   height: 100vh;
   min-height: 100vh;
-}
 
-.home__year {
-  color: white;
+  &__year {
+    color: white;
+  }
 }
 
 // YOURNYT----------------------------------------------------------
@@ -54,8 +88,8 @@ p {
   margin: 0;
 }
 .yournyt{
-  height: 100vh;
-  min-height: 100vh;
+  height: 80vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -68,11 +102,13 @@ p {
   text-align: left;
   font-size: 48px;
   margin: 5% 0;
-}
-.stat__name{
-  font-family: cheltenham-normal-200;
-}
-.stat__num{
-  color: $purple-color;
-  font-family: karnak-normal-700;
+
+  &__name{
+    font-family: cheltenham-normal-200;
+  }
+
+  &__num{
+    color: $purple-color;
+    font-family: karnak-bold;
+  }
 }
