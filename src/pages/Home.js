@@ -7,11 +7,11 @@ function Home() {
     return (
         <>
         <nav>
-       <h1>Home</h1>
-       <Link to= "/yournyt"> YourNYT </Link>
-       </nav>
-       <Outlet />
-       </>
+            <h1>Home</h1>
+            <Link to= "/yournyt"> Begin </Link>
+        </nav>
+        <Outlet />
+        </>
     );
  }
 
