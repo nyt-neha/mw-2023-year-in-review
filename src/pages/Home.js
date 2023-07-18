@@ -19,7 +19,7 @@ function Home() {
                 <p className="home__text">
                     Your profile leans Purple
                 </p>
-                <Link to="/yournyt"> Begin </Link>
+                <Link className="button" to="/yournyt"> Begin </Link>
             </div>
             <Outlet />
         </>

@@ -27,16 +27,17 @@
   src: url('../public/fonts/karnak/karnak-normal-700.woff');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+$purple-color: #9747FF;
+
+.button {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 15px;
 }
 
-$purple-color: #9747FF;
+// HOME----------------------------------------------------------
 
 .home {
   background-color: $purple-color;

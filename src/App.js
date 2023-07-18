@@ -4,6 +4,7 @@ import YourNYT from './pages/YourNYT';
 import './App.scss';
 import {StrictMode } from "react"; 
 import logo from "./LogoWhite.png"
+import UserProfile from "./UserProfile";
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
       <Routes>
         <Route exact path='/' element={< Home />}></Route>
         <Route exact path='/yournyt' element={< YourNYT />}></Route>
-    </Routes>
-    </BrowserRouter>
-    </StrictMode>
+      </Routes>
+      </BrowserRouter>
+      </StrictMode>
     </div>
+    <UserProfile/>
     </>
   );
 }
