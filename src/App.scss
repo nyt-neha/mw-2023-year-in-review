@@ -13,28 +13,18 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
+//FONTS----------------------------------------------------------
 @font-face {
-  font-family: cheltenham;
+  font-family: cheltenham-italic-200;
   src: url('../public/fonts/cheltenham/cheltenham-italic-200.woff');
 }
-
-.test1 {
-  font-family: cheltenham;
+@font-face {
+  font-family: cheltenham-normal-200;
+  src: url('../public/fonts/cheltenham/cheltenham-normal-200.woff');
+}
+@font-face {
+  font-family: karnak-normal-700;
+  src: url('../public/fonts/karnak/karnak-normal-700.woff');
 }
 
 @keyframes App-logo-spin {
@@ -56,4 +46,32 @@ $purple-color: #9747FF;
 
 .home__year {
   color: white;
+}
+
+// YOURNYT----------------------------------------------------------
+p {
+  margin: 0;
+}
+.yournyt{
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10%
+}
+.stat {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+  font-size: 48px;
+  margin: 5% 0;
+}
+.stat__name{
+  font-family: cheltenham-normal-200;
+}
+.stat__num{
+  color: $purple-color;
+  font-family: karnak-normal-700;
 }
