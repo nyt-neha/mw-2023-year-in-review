@@ -77,9 +77,24 @@ h4 {
   background-color: $purple-color;
   height: 100vh;
   min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+  font-size: 48px;
+  margin: 5% 0;
+  padding-left: 5%;
+  padding-top: 20%;
+
 
   &__year {
     color: white;
+    font-weight: bold;
+    font-size: 80px;
+  }
+
+  &__name{
+    font-family: cheltenham-normal-200;
   }
 }
 
