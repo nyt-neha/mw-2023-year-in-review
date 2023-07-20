@@ -51,6 +51,11 @@ h4 {
   top: 0px;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 // USER PROFILE FOOTER----------------------------------------------------------
 .userprofile {
   display: flex;
@@ -132,4 +137,34 @@ p {
     color: $purple-color;
     font-family: karnak-bold;
   }
+}
+
+//TOP LISTS---------------------------------------------------------
+.toplists {
+  height: 80vh;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10%;
+
+  &__mostread, &__faveconts {
+    color: $purple-color;
+    font-family: karnak-bold;
+    font-size: 35px;
+  }
+
+  h4 {
+    border-top: 2px solid black;
+    padding: 5% 0 1% 0;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+li {
+  list-style-position: outside;
+
 }

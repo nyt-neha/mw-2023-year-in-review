@@ -24,7 +24,9 @@ function YourNYT(props) {
             <div className="yournyt">
                 <div className="stat">
                     <p className="stat__num">{numWithCommas(articleNum)}</p>
-                    <p className="stat__name">Articles {String.fromCharCode(8594)}</p>
+                    <Link className="link" to="/toplists">
+                        <p className="stat__name">Articles {String.fromCharCode(8594)}</p>
+                    </Link>
                 </div>
                 <div className="stat">
                 <p className="stat__num">{numWithCommas(wordNum)}</p>
