@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import YourNYT from './pages/YourNYT';
+import Startup from './pages/Startup';
 import './App.scss';
 import {StrictMode } from "react"; 
 import logo from "./LogoWhite.png"
@@ -12,14 +13,15 @@ function App() {
     <div className="header">
       <img src={logo} alt="Logo" />
     </div>
-    
+
     <div className="App">
       <StrictMode> 
 
       <BrowserRouter>
       <Routes>
-        <Route exact path='/' element={< Home />}></Route>
+        <Route exact path='/' element={< Startup />}></Route>
         <Route exact path='/yournyt' element={< YourNYT />}></Route>
+        <Route exact path='/home' element={< Home />}></Route>
       </Routes>
       </BrowserRouter>
       </StrictMode>

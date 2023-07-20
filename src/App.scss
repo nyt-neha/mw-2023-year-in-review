@@ -1,18 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 //FONTS----------------------------------------------------------
 @font-face {
   font-family: cheltenham-italic-200;
@@ -31,8 +16,12 @@
   src: url('../public/fonts/franklin/franklin-normal-500.woff');
 }
 
+//SETTINGS----------------------------------------------------------
 $purple-color: #9747FF;
 
+$text-extralarge: 275px;
+
+//GLOBAL STYLES----------------------------------------------------------
 .button {
   font-size: 16px;
   font-family: karnak-bold;
@@ -61,6 +50,7 @@ h4 {
   position: fixed;
   top: 0px;
 }
+
 // USER PROFILE FOOTER----------------------------------------------------------
 .userprofile {
   display: flex;
@@ -80,7 +70,7 @@ h4 {
 
 // HOME----------------------------------------------------------
 
-.home {
+.home,.startup {
   background-color: $purple-color;
   top: 0px;
   min-height: 80vh;
@@ -97,6 +87,16 @@ h4 {
     font-weight: bold;
     font-size: 80px;
     font-family: karnak-bold;
+
+    &--large {
+      font-family: karnak-bold;
+      color: white;
+      font-size: $text-extralarge;
+      line-height: $text-extralarge;
+      display: flex;
+      align-items: center;
+      height: 70vh;
+    }
   }
 
   &__name{
