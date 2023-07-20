@@ -34,13 +34,17 @@
 $purple-color: #9747FF;
 
 .button {
+  font-size: 16px;
   font-family: karnak-bold;
+  text-align: center;
   background-color: black;
   text-decoration: none;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 20px;
-  max-width: 75px
+  max-width: 100px;
+  position: absolute;
+  bottom: 20%;
 }
 
 h4 {
@@ -55,6 +59,7 @@ h4 {
   padding: 5% 0;
   width: 100%;
   position: fixed;
+  top: 0px;
 }
 // USER PROFILE FOOTER----------------------------------------------------------
 .userprofile {
@@ -64,6 +69,8 @@ h4 {
   padding: 2% 10% 5% 10%;
   border-top: 1px solid black;
   position: fixed;
+  bottom: 0px;
+  background-color: white;
 
   &__description {
     font-family: cheltenham-normal-200;
@@ -75,22 +82,21 @@ h4 {
 
 .home {
   background-color: $purple-color;
-  height: 100vh;
-  min-height: 100vh;
+  top: 0px;
+  min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: left;
   font-size: 48px;
-  margin: 5% 0;
-  padding-left: 5%;
-  padding-top: 20%;
+  padding: 20% 10% 0 10%;
 
 
   &__year {
     color: white;
     font-weight: bold;
     font-size: 80px;
+    font-family: karnak-bold;
   }
 
   &__name{
@@ -108,7 +114,7 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 10%
+  padding: 0 10%;
 }
 .stat {
   display: flex;
