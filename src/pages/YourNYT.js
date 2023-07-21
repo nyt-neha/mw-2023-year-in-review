@@ -12,12 +12,18 @@ function YourNYT(props) {
     const [wordNum, setWordNum] = useState(0);
     const [contNum, setContNum] = useState(0);
 
-
     useEffect(() => {
-      setArticleNum(1235)
-      setWordNum(1587939)
-      setContNum(11)
-    });
+        const fetchData = async () => {
+            const response = await fetch(`http://mw23-yir-1229764750.us-east-1.elb.amazonaws.com/core-numbers-top-lists/202056173`);
+            const data = await response.json();
+            console.log(data)
+            setArticleNum(data.articlesRead)
+            setWordNum(data.wordsRead)
+            setContNum(data.topBylines.slice(0,11).length)
+          };
+
+        fetchData();
+    },[articleNum, wordNum, contNum]);
   
     return (
         <>

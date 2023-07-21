@@ -7,11 +7,23 @@ function TopLists() {
     const [mostReadList, setMostReadList] = useState([]);
     const [faveConts, setFaveConts] = useState([]);
 
-
     useEffect(() => {
-        setMostReadList(["Metro", "Science", "International", "Business", "Washington"])
-        setFaveConts(["David Leonhardt", "Chelsia Rose Marcius", "Katie Robertson"])
-    });
+        const fetchData = async () => {
+            const response = await fetch(`http://mw23-yir-1229764750.us-east-1.elb.amazonaws.com/core-numbers-top-lists/202056173`);
+            const data = await response.json();
+            console.log(data)
+            setMostReadList(data.topDesks.split(","))
+            setFaveConts(data.topBylines.split(",").slice(0,3))
+          };
+
+        fetchData();
+        // setContNum(11)
+    },[mostReadList]);
+
+    // useEffect(() => {
+    //     setMostReadList(["Metro", "Science", "International", "Business", "Washington"])
+    //     setFaveConts(["David Leonhardt", "Chelsia Rose Marcius", "Katie Robertson"])
+    // });
     return (
         <div className="toplists">
             <hr/>
